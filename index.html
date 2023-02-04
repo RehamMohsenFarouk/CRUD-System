@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  
+  <div class=" w-50 m-auto p-5 shadow-lg">
+    
+    <h1>CRUD SYSTEM</h1> 
+
+    <label >ProductName:</label>
+    <input type="text"  class="form-control  " id="ProductName" placeholder="ex:Samsong2022">
+    <div id="pNameAlert" class="alert alert-danger d-none "></div>
+    
+    <label>ProductCategory:</label>
+    <input type="text" class="form-control" id="ProductCategory">
+
+    <label>ProductPrice:</label>
+    <input type="text" class="form-control" id="ProductPrice">
+
+    <label>ProductDescription:</label>
+    <textarea class="form-control mb-4" id="ProductDescription"></textarea>
+
+    <button  class="btn btn-outline-success" id="addUpdateButton">Add Product</button>
+
+    <button onclick="clearForm()" class="btn btn-outline-success">clear</button>
+    <div id="fillAllAlert" class="alert alert-danger p-3 d-none">please fill all fields</div>
+    
+</div>
+
+
+<input id="searchInput" type="text" placeholder="search...."  class="form-control mt-4 w-25 m-auto">
+
+
+
+<table class="table w-75 m-auto mt-5 text-center table-striped">
+<thead>
+<th>index</th>
+<th>name</th>
+<th>category</th>
+<th>price</th>
+<th>description</th>
+<th>update</th>
+<th>delete</th>
+
+</thead>
+<tbody id="tbody">
+
+
+
+
+
+
+</tbody>
+</table>
+ 
+  
+  <script src="js/main.js"></script>
+  <!-- <script src="js/desplay with DOM.js"></script> -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+</html>
